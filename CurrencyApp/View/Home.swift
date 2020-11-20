@@ -12,6 +12,7 @@ import SwiftUI
 
 struct Home: View {
     @StateObject var viewModel = FetchData()
+    
     var body: some View {
         VStack {
             
@@ -36,24 +37,37 @@ struct Home: View {
                 }
             }
         }
+    }
+    
+    
+    
+    
+    func getFlag(currency: String) ->String {
         
+        var base = 127397
+        var scalar = String.UnicodeScalarView()
+        
+        for i in currency.utf16{
+            
+           scalar.append(UnicodeScalar(base + Int(i))!)
+        }
+        
+        return String(scalar)
     }
 }
+       
 
-// Получение флага по имени Валюты
-
-func getFlag(currency: String) {
     
-    var base = 127397
-    
-}
+   
 
 
 
 
-@available(iOS 14.0, *)
-struct Home_Previews: PreviewProvider {
-    static var previews: some View {
-        Home()
-    }
-}
+
+
+//@available(iOS 14.0, *)
+//struct Home_Previews: PreviewProvider {
+//    static var previews: some View {
+//        Home()
+//    }
+//}
