@@ -30,15 +30,15 @@ struct Home: View {
                                 Text(getFlag(currency: rate.currencyName))
                                     .font(.system(size: 65))
                                 VStack(alignment: .leading, spacing: 5, content: {
-                                     
+                                    
                                     Text(rate.currencyName)
                                         .font(.title)
                                         .fontWeight(.bold)
                                     
                                     Text("\(rate.currencyValue)")
                                         .fontWeight(.heavy)
-                                       
-                            })
+                                    
+                                })
                             }
                             .padding(.horizontal)
                         }
@@ -48,9 +48,22 @@ struct Home: View {
                 }
             }
         }
-    }
-    
-    
+        .toolbar(content: {
+            
+            Menu(content: {
+                
+                ForEach(currencies,id: \.self) {name in
+                    Button(action: {}, label: {
+                        Text(name)
+                    })
+                }
+                
+            }) {
+                Text("Base \(viewModel.base)")
+                    .fontWeight(.heavy)
+            }
+        })
+}
     
     
     func getFlag(currency: String) ->String {

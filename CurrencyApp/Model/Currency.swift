@@ -15,5 +15,7 @@ struct Currency: Identifiable {
     var currencyValue: Double
     
     
-    
 }
+
+
+var currencies = ["USD", "EUR", "RUB", "CHF"]
