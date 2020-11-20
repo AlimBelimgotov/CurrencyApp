@@ -27,7 +27,18 @@ struct Home: View {
                             
                             HStack(spacing: 15) {
                                 
-                                Text(rate.currencyName)
+                                Text(getFlag(currency: rate.currencyName))
+                                    .font(.system(size: 65))
+                                VStack(alignment: .leading, spacing: 5, content: {
+                                     
+                                    Text(rate.currencyName)
+                                        .font(.title)
+                                        .fontWeight(.bold)
+                                    
+                                    Text("\(rate.currencyValue)")
+                                        .fontWeight(.heavy)
+                                       
+                            })
                             }
                             .padding(.horizontal)
                         }
@@ -65,9 +76,9 @@ struct Home: View {
 
 
 
-//@available(iOS 14.0, *)
-//struct Home_Previews: PreviewProvider {
-//    static var previews: some View {
-//        Home()
-//    }
-//}
+@available(iOS 14.0, *)
+struct Home_Previews: PreviewProvider {
+    static var previews: some View {
+       Home()
+    }
+}
