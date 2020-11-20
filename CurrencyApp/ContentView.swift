@@ -11,7 +11,12 @@ import SwiftUI
 @available(iOS 14.0, *)
 struct ContentView: View {
     var body: some View {
-       Home()
+        NavigationView {
+            Home()
+                .navigationTitle("Currency")
+                .preferredColorScheme(.dark)
+            
+        }
     }
 }
 

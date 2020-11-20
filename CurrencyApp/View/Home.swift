@@ -56,9 +56,12 @@ struct Home: View {
     func getFlag(currency: String) ->String {
         
         var base = 127397
+        var code = currency
+        code.removeLast()
+        
         var scalar = String.UnicodeScalarView()
         
-        for i in currency.utf16{
+        for i in code.utf16{
             
            scalar.append(UnicodeScalar(base + Int(i))!)
         }
