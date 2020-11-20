@@ -44,6 +44,13 @@ class FetchData: ObservableObject {
         .resume()
         
     }
+    
+    
+    func updateData(base:String) {
+        self.base = base
+        self.conversionData.removeAll()
+        fetch()
+    }
 }
 
 

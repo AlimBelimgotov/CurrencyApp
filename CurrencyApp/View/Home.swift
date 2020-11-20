@@ -53,7 +53,7 @@ struct Home: View {
             Menu(content: {
                 
                 ForEach(currencies,id: \.self) {name in
-                    Button(action: {}, label: {
+                    Button(action: {viewModel.updateData(base: name)}, label: {
                         Text(name)
                     })
                 }

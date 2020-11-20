@@ -18,4 +18,4 @@ struct Currency: Identifiable {
 }
 
 
-var currencies = ["USD", "EUR", "RUB", "CHF"]
+var currencies = ["USD", "EUR", "RUB", "CHF","JPY","GBP"]
