@@ -1,55 +1,55 @@
 {
   "images" : [
     {
-      "filename" : "Group 25-20@2x.png",
+      "filename" : "Frame 1-20@2x.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "20x20"
     },
     {
-      "filename" : "Group 25-20@3x.png",
+      "filename" : "Frame 1-20@3x.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "20x20"
     },
     {
-      "filename" : "Group 25-29@1x.png",
+      "filename" : "Frame 1-29@1x.png",
       "idiom" : "iphone",
       "scale" : "1x",
       "size" : "29x29"
     },
     {
-      "filename" : "Group 25-29@2x.png",
+      "filename" : "Frame 1-29@2x.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "29x29"
     },
     {
-      "filename" : "Group 25-29@3x.png",
+      "filename" : "Frame 1-29@3x.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "29x29"
     },
     {
-      "filename" : "Group 25-40@2x.png",
+      "filename" : "Frame 1-40@2x.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "40x40"
     },
     {
-      "filename" : "Group 25-40@3x.png",
+      "filename" : "Frame 1-40@3x.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "40x40"
     },
     {
-      "filename" : "Group 25-60@2x.png",
+      "filename" : "Frame 1-60@2x.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "60x60"
     },
     {
-      "filename" : "Group 25-60@3x.png",
+      "filename" : "Frame 1-60@3x.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "60x60"
@@ -100,7 +100,7 @@
       "size" : "83.5x83.5"
     },
     {
-      "filename" : "Group 25-1024@1x.png",
+      "filename" : "Frame 1-1024@1x.png",
       "idiom" : "ios-marketing",
       "scale" : "1x",
       "size" : "1024x1024"

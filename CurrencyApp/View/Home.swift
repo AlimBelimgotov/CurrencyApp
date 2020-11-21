@@ -59,7 +59,7 @@ struct Home: View {
                 }
                 
             }) {
-                Text("Base \(viewModel.base)")
+                Text("Валюта \(viewModel.base)")
                     .fontWeight(.heavy)
             }
         })
