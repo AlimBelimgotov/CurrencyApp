@@ -13,7 +13,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             Home()
-                .navigationTitle("Валюты")
+                .navigationTitle("Currency")
                 .preferredColorScheme(.dark)
             
         }

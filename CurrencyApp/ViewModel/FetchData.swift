@@ -7,7 +7,6 @@
 //
 
 import SwiftUI
-
 class FetchData: ObservableObject {
     
     @Published var conversionData: [Currency] = []

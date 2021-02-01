@@ -32,6 +32,7 @@
 		EE3BB9F22565F10A00CBDA60 /* Conversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conversion.swift; sourceTree = "<group>"; };
 		EE3BB9F42565F17500CBDA60 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		EE3BB9F62565F20300CBDA60 /* FetchData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchData.swift; sourceTree = "<group>"; };
+		EEAB2F36256D2D0200A24FBA /* CurrencyApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CurrencyApp.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +65,7 @@
 		EE3BB9D82565EFE100CBDA60 /* CurrencyApp */ = {
 			isa = PBXGroup;
 			children = (
+				EEAB2F36256D2D0200A24FBA /* CurrencyApp.entitlements */,
 				EE3BB9EF2565F02B00CBDA60 /* ViewModel */,
 				EE3BB9EE2565F02500CBDA60 /* Model */,
 				EE3BB9ED2565F01500CBDA60 /* View */,
@@ -324,6 +326,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CurrencyApp/CurrencyApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"CurrencyApp/Preview Content\"";
 				DEVELOPMENT_TEAM = X4XKW9NXX6;
@@ -334,7 +337,8 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = firsttwo.CurrencyApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = CurrencyApp;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -344,6 +348,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CurrencyApp/CurrencyApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"CurrencyApp/Preview Content\"";
 				DEVELOPMENT_TEAM = X4XKW9NXX6;
@@ -354,7 +359,8 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = firsttwo.CurrencyApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = CurrencyApp;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

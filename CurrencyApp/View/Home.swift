@@ -59,7 +59,7 @@ struct Home: View {
                 }
                 
             }) {
-                Text("Валюта \(viewModel.base)")
+                Text("Base \(viewModel.base)")
                     .fontWeight(.heavy)
             }
         })
@@ -68,7 +68,7 @@ struct Home: View {
     
     func getFlag(currency: String) ->String {
         
-        var base = 127397
+        let base = 127397
         var code = currency
         code.removeLast()
         
