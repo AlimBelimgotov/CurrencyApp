@@ -1,12 +1,7 @@
 # CurrencyApp
 Currency Exchange API using SwiftUI 2.0
 
-Developing a currency converter app using exchangeratesapi.io</br> 
-– Work with SwiftUI Framework</br>  
-– Work on the design in Sketch</br>  
-– Work with URLSession</br>  
-– Work on UnicodeScalarView</br> 
-– Used MVVM pattern</br> 
+Developing a currency converter app using exchangeratesapi.io</br> – Work with SwiftUI Framework</br>  – Work on the design in Sketch</br>  – Work with URLSession</br>  – Work on UnicodeScalarView</br> – Used MVVM pattern</br> 
 
 
 <img src="https://user-images.githubusercontent.com/44450208/130803644-1a779b2a-cdfb-4988-b2f3-b287209b877d.png" width="365" height="770" /> 
