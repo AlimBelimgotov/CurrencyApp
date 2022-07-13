@@ -7,7 +7,8 @@
 //
 
 import SwiftUI
-class FetchData: ObservableObject {
+
+ final class FetchData: ObservableObject {
     
     @Published var conversionData: [Currency] = []
     @Published var base = "USD"
@@ -16,18 +17,26 @@ class FetchData: ObservableObject {
         fetch()
     }
     
-    func fetch() {
+     private func fetch() {
         
-        let url = "https://api.exchangeratesapi.io/latest?base=\(base)"
-        let session = URLSession(configuration: .default)
+        let url =  URL(string: "https://api.apilayer.com/exchangerates_data/latest&base=\(base)")
+        guard let url = url else { return }
+         
+        var request = URLRequest(url: url,timeoutInterval: Double.infinity)
+        request.httpMethod = "GET"
+        request.addValue("oXAOXWQJTpc25W4nY0rFG7a6xNobYrin", forHTTPHeaderField: "apikey")
         
-        session.dataTask(with: URL(string: url)!) { (data, _, _) in
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            guard let data = data else {
+                print(String(describing: error))
+                return
+            }
             
-            guard let JSONData = data else { return }
-            
+            print(String(data: data, encoding: .utf8)!)
+
             do {
-                let conversion = try JSONDecoder().decode(Conversion.self, from: JSONData)
-              //  print(conversion)
+                let conversion = try JSONDecoder().decode(Conversion.self, from: data)
+                print(conversion)
                 
                 DispatchQueue.main.async {
                     self.conversionData = conversion.rates.compactMap({ (key, value) -> Currency? in
@@ -40,8 +49,7 @@ class FetchData: ObservableObject {
                 
             }
         }
-        .resume()
-        
+        task.resume()
     }
     
     

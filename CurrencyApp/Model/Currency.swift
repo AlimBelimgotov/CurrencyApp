@@ -13,9 +13,6 @@ struct Currency: Identifiable {
     var id = UUID().uuidString
     var currencyName: String
     var currencyValue: Double
-    
-    
 }
-
 
 var currencies = ["USD", "EUR", "RUB", "CHF","JPY","GBP"]

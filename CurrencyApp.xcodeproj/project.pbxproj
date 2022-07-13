@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C27D1856287F02F200709C23 /* InternetCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27D1855287F02F200709C23 /* InternetCheck.swift */; };
 		EE3BB9DA2565EFE100CBDA60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3BB9D92565EFE100CBDA60 /* AppDelegate.swift */; };
 		EE3BB9DC2565EFE100CBDA60 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3BB9DB2565EFE100CBDA60 /* SceneDelegate.swift */; };
 		EE3BB9DE2565EFE100CBDA60 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3BB9DD2565EFE100CBDA60 /* ContentView.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C27D1855287F02F200709C23 /* InternetCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetCheck.swift; sourceTree = "<group>"; };
 		EE3BB9D62565EFE100CBDA60 /* CurrencyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CurrencyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE3BB9D92565EFE100CBDA60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE3BB9DB2565EFE100CBDA60 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,6 +48,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C27D1854287EDCD800709C23 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				EE3BB9D92565EFE100CBDA60 /* AppDelegate.swift */,
+				EE3BB9DB2565EFE100CBDA60 /* SceneDelegate.swift */,
+				C27D1855287F02F200709C23 /* InternetCheck.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
 		EE3BB9CD2565EFE100CBDA60 = {
 			isa = PBXGroup;
 			children = (
@@ -69,9 +81,7 @@
 				EE3BB9EF2565F02B00CBDA60 /* ViewModel */,
 				EE3BB9EE2565F02500CBDA60 /* Model */,
 				EE3BB9ED2565F01500CBDA60 /* View */,
-				EE3BB9D92565EFE100CBDA60 /* AppDelegate.swift */,
-				EE3BB9DB2565EFE100CBDA60 /* SceneDelegate.swift */,
-				EE3BB9DD2565EFE100CBDA60 /* ContentView.swift */,
+				C27D1854287EDCD800709C23 /* Application */,
 				EE3BB9DF2565EFE200CBDA60 /* Assets.xcassets */,
 				EE3BB9E42565EFE200CBDA60 /* LaunchScreen.storyboard */,
 				EE3BB9E72565EFE200CBDA60 /* Info.plist */,
@@ -92,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				EE3BB9F02565F05000CBDA60 /* Home.swift */,
+				EE3BB9DD2565EFE100CBDA60 /* ContentView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -189,6 +200,7 @@
 				EE3BB9DA2565EFE100CBDA60 /* AppDelegate.swift in Sources */,
 				EE3BB9F32565F10A00CBDA60 /* Conversion.swift in Sources */,
 				EE3BB9DC2565EFE100CBDA60 /* SceneDelegate.swift in Sources */,
+				C27D1856287F02F200709C23 /* InternetCheck.swift in Sources */,
 				EE3BB9F12565F05000CBDA60 /* Home.swift in Sources */,
 				EE3BB9DE2565EFE100CBDA60 /* ContentView.swift in Sources */,
 			);
@@ -258,7 +270,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -312,7 +324,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -329,9 +341,10 @@
 				CODE_SIGN_ENTITLEMENTS = CurrencyApp/CurrencyApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"CurrencyApp/Preview Content\"";
-				DEVELOPMENT_TEAM = X4XKW9NXX6;
+				DEVELOPMENT_TEAM = 8C44H3653W;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = CurrencyApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -351,9 +364,10 @@
 				CODE_SIGN_ENTITLEMENTS = CurrencyApp/CurrencyApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"CurrencyApp/Preview Content\"";
-				DEVELOPMENT_TEAM = X4XKW9NXX6;
+				DEVELOPMENT_TEAM = 8C44H3653W;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = CurrencyApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
