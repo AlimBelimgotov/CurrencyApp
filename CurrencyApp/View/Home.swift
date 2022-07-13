@@ -12,10 +12,11 @@ import SwiftUI
 
 struct Home: View {
     @StateObject var viewModel = FetchData()
+    @State private var presentAlert = true
     
     var body: some View {
+        
         VStack {
-            
             if viewModel.conversionData.isEmpty {
                 ProgressView()
             }
@@ -36,20 +37,19 @@ struct Home: View {
                                         .fontWeight(.bold)
                                     
                                     Text("\(rate.currencyValue)")
-                                        .fontWeight(.heavy)
-                                    
+                                        .fontWeight(.regular)
                                 })
                             }
                             .padding(.horizontal)
                         }
                     })
                     .padding(.top)
-                    
                 }
             }
         }
+        .alert("Title", isPresented: $presentAlert, actions: {})
+        
         .toolbar(content: {
-            
             Menu(content: {
                 
                 ForEach(currencies,id: \.self) {name in
@@ -65,7 +65,6 @@ struct Home: View {
         })
 }
     
-    
     func getFlag(currency: String) ->String {
         
         let base = 127397
@@ -74,22 +73,14 @@ struct Home: View {
         
         var scalar = String.UnicodeScalarView()
         
-        for i in code.utf16{
+        for item in code.utf16 {
             
-           scalar.append(UnicodeScalar(base + Int(i))!)
+           scalar.append(UnicodeScalar(base + Int(item))!)
         }
         
         return String(scalar)
     }
 }
-       
-
-    
-   
-
-
-
-
 
 
 @available(iOS 14.0, *)
