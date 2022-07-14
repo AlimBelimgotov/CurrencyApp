@@ -11,6 +11,7 @@ import SwiftUI
 @available(iOS 14.0, *)
 
 struct Home: View {
+    
     @StateObject var viewModel = FetchData()
     @State private var presentAlert = true
     
@@ -47,7 +48,7 @@ struct Home: View {
                 }
             }
         }
-        .alert("Title", isPresented: $presentAlert, actions: {})
+        //.alert("Title", isPresented: $presentAlert, actions: {})
         
         .toolbar(content: {
             Menu(content: {
